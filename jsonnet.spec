@@ -9,6 +9,9 @@ License:  Apache-2.0
 URL:      https://github.com/google/jsonnet
 Source0:  https://github.com/google/jsonnet/archive/v%{version}.tar.gz
 
+
+%{?el7:BuildRequires: centos-release-scl}
+BuildRequires: make
 BuildRequires: gcc
 BuildRequires: gcc-c++
 
@@ -19,7 +22,8 @@ A data templating language for app and tool developers
 %autosetup
 
 %build
-make
+%{?el7:yum install -y devtoolset-7-gcc devtoolset-7-gcc-c++}
+%{?el7:scl enable devtoolset-7 --} make
 
 %install
 install -D jsonnet %{buildroot}/%{_bindir}/%{name}
