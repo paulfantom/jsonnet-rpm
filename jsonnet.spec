@@ -32,6 +32,9 @@ install -D jsonnet %{buildroot}/%{_bindir}/%{name}
 %defattr(-,root,root,-)
 %attr(755, root, root) %{_bindir}/%{name}
 
+%check
+make test
+
 %changelog
 * Sun May 12 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.12.1-1
 - Initial release of version 0.12.1
