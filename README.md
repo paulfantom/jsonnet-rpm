@@ -1,4 +1,4 @@
-[![Travis Build Status](https://travis-ci.org/paulfantom/jsonnet.svg?branch=master)](https://travis-ci.org/paulfantom/jsonnet)
+[![Travis Build Status](https://travis-ci.com/paulfantom/jsonnet-rpm.svg?branch=master)](https://travis-ci.com/paulfantom/jsonnet-rpm)
 [![Copr Build Status](https://copr.fedorainfracloud.org/coprs/paulfantom/jsonnet/package/jsonnet/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/paulfantom/jsonnet/)
 # RPM Package: jsonnet
 
