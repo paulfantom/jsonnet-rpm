@@ -2,8 +2,8 @@
 %define debug_package %{nil}
 
 Name:     jsonnet
-Version:  0.12.1
-Release:  2
+Version:  0.13.0
+Release:  1
 Summary:  The data templating language
 License:  Apache-2.0
 URL:      https://github.com/google/jsonnet
@@ -35,6 +35,9 @@ install -D jsonnet %{buildroot}/%{_bindir}/%{name}
 #make test # currently tests are written in python2 which is not available in F30
 
 %changelog
+* Tue Jun 04 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-1
+- Automated release of jsonnet version 0.13.0
+
 * Sun May 12 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.12.1-1
 - Initial release of version 0.12.1
 
