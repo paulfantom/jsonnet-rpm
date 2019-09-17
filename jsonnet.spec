@@ -43,7 +43,7 @@ install -D jsonnetfmt %{buildroot}/%{_bindir}/%{name}fmt
 * Wed Jun 12 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-3
 - Fix copying binaries
 
-* Tue Jun 05 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-2
+* Wed Jun 05 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-2
 - Add jsonnetfmt binary
 
 * Tue Jun 04 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-1
