@@ -12,8 +12,8 @@ Source0:  https://github.com/google/jsonnet/archive/v%{version}.tar.gz
 BuildRequires: make
 BuildRequires: gcc
 BuildRequires: gcc-c++
-%{?el7:BuildRequires: devtoolset-7-gcc}
-%{?el7:BuildRequires: devtoolset-7-gcc-c++}
+#%{?el7:BuildRequires: devtoolset-7-gcc}
+#%{?el7:BuildRequires: devtoolset-7-gcc-c++}
 
 %description
 A data templating language for app and tool developers
@@ -22,7 +22,8 @@ A data templating language for app and tool developers
 %autosetup
 
 %build
-%{?el7:scl enable devtoolset-7 --} make
+make
+#%{?el7:scl enable devtoolset-7 --} make
 
 %install
 install -D jsonnet %{buildroot}/%{_bindir}/%{name}
