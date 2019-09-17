@@ -21,6 +21,6 @@ script:
   - if [ "${TRAVIS_EVENT_TYPE}" == "cron" ]; then .travis/check.sh; else docker run -v ${PWD}:/sources -v ${PWD}:/output:Z -e "SRPM_ONLY=1" ${DOCKER_IMAGE}:${OS_TYPE}-${OS_VERSION}; fi
 
 after_success:
-  - pip install copr-cli simplejson
+  - pip install 'copr-cli==1.79.1' simplejson 'marshmallow<3.0.0'
   - openssl aes-256-cbc -K $encrypted_473e98cb5e1b_key -iv $encrypted_473e98cb5e1b_iv -in .copr.enc -out .copr -d
   - if [ ! -z "${TRAVIS_TAG}" ]; then copr-cli --config .copr build -r ${OS_DIST}-${OS_VERSION}-${OS_ARCH} ${COPR_REPOSITORY} *.src.rpm; fi

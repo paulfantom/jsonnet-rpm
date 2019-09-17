@@ -40,6 +40,7 @@ install -D jsonnetfmt %{buildroot}/%{_bindir}/%{name}fmt
 %changelog
 * Tue Sep 17 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.14.0-1
 - Automated release of jsonnet version 0.14.0
+- Removed devtoolset-7 build dependency on CentOS7
 
 * Wed Jun 12 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.13.0-3
 - Fix copying binaries
