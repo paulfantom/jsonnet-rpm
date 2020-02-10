@@ -2,7 +2,7 @@
 %define debug_package %{nil}
 
 Name:     jsonnet
-Version:  0.14.0
+Version:  0.15.0
 Release:  1
 Summary:  The data templating language
 License:  Apache-2.0
@@ -38,6 +38,9 @@ install -D jsonnetfmt %{buildroot}/%{_bindir}/%{name}fmt
 #make test # currently tests are written in python2 which is not available in F30
 
 %changelog
+* Mon Feb 10 2020 Pawel Krupa <pawel@krupa.net.pl> - 0.15.0-1
+- Automated release of jsonnet version 0.15.0
+
 * Tue Sep 17 2019 Pawel Krupa <pawel@krupa.net.pl> - 0.14.0-1
 - Automated release of jsonnet version 0.14.0
 - Removed devtoolset-7 build dependency on CentOS7
